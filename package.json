@@ -1,0 +1,10 @@
+{
+  "name": "dsh-connectors",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH 连接器三件套：余额小组件、浏览器接入、操控电脑。",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}

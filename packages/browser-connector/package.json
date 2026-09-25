@@ -1,0 +1,34 @@
+{
+  "name": "@azhe0306/dsh-browser-connector",
+  "version": "1.0.0",
+  "description": "浏览器自动化连接器：无头 Edge/Chrome 通过 DevTools 协议被 agent 直接驱动（打开页面、读正文、点击、填表、截图）。",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./core": "./core.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "core.mjs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "browser",
+    "automation",
+    "mcp"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

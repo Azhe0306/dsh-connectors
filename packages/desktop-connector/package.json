@@ -1,0 +1,42 @@
+{
+  "name": "@azhe0306/dsh-desktop-connector",
+  "version": "1.0.0",
+  "description": "桌面控制连接器（Windows）：截屏（含被遮挡/半出屏窗口）、枚举与置顶窗口、鼠标移动点击拖拽滚轮、发送按键与任意中文文字。",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./core": "./core.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "core.mjs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "desktop",
+    "computer-control",
+    "screenshot",
+    "windows",
+    "mcp"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "koffi": "^3.1.5"
+  },
+  "os": [
+    "win32"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

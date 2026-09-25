@@ -1,0 +1,3 @@
+- insert:
+    - id: browser-connector
+      name: '@azhe0306/dsh-browser-connector'

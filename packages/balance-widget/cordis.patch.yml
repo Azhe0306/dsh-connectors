@@ -1,0 +1,3 @@
+- insert:
+    - id: balance-widget
+      name: '@azhe0306/dsh-balance-widget'
