@@ -1,0 +1,23 @@
+{
+  "manifestVersion": "1.0.0",
+  "providerId": "com.github.azhe0306.dsh-connectors",
+  "name": "Azhe0306 插件源（GitHub）",
+  "description": "直接读 GitHub 仓库 Azhe0306/dsh-connectors 的静态插件目录：余额小组件、浏览器接入、操控电脑。",
+  "homepage": "https://github.com/Azhe0306/dsh-connectors",
+  "attribution": {
+    "name": "Azhe0306",
+    "url": "https://github.com/Azhe0306/dsh-connectors",
+    "notice": "静态目录页，随仓库 main 分支更新。"
+  },
+  "transport": {
+    "kind": "https-json",
+    "endpoint": "https://raw.githubusercontent.com/Azhe0306/dsh-connectors/main/market/v1/plugins",
+    "method": "GET"
+  },
+  "query": {
+    "supported": [],
+    "defaultLimit": 50,
+    "maxLimit": 50,
+    "sorts": []
+  }
+}

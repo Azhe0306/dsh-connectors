@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-25T19:45:00Z",
+  "revision": "1.0.0",
+  "items": [
+    {
+      "id": "Azhe0306/dsh-connectors:balance-widget",
+      "name": "@azhe0306/dsh-balance-widget",
+      "displayName": "余额小组件（会话标题栏）",
+      "summary": "在 DSH 会话标题栏右上角显示账户可用余额（充值余额与赠金余额合并），每两分钟刷新；未登录或查询失败时不显示。",
+      "description": "会话标题栏右上角只显示金额，例如 ¥42.55。悬停给出拆分：当前余额 ¥xx（充值 ¥xx + 赠金 ¥xx）。未登录或查询失败时不显示任何内容，余额为 0 时显示 ¥0.00。中英双语跟随界面语言。",
+      "homepage": "https://github.com/Azhe0306/dsh-connectors/tree/main/packages/balance-widget",
+      "latestVersion": "1.0.0",
+      "license": "MIT",
+      "categories": ["usage"],
+      "keywords": ["balance", "usage", "余额", "标题栏"],
+      "repository": {
+        "url": "https://github.com/Azhe0306/dsh-connectors",
+        "subdirectory": "packages/balance-widget"
+      },
+      "publisher": {
+        "name": "Azhe0306",
+        "url": "https://github.com/Azhe0306"
+      },
+      "capabilities": {
+        "required": ["account.balance"],
+        "optional": ["ui.header"]
+      },
+      "updatedAt": "2026-09-25T19:45:00Z"
+    },
+    {
+      "id": "Azhe0306/dsh-connectors:browser-connector",
+      "name": "@azhe0306/dsh-browser-connector",
+      "displayName": "浏览器接入（无头 Edge/Chrome）",
+      "summary": "浏览器自动化连接器：用 DevTools 协议直接驱动本机 Edge/Chrome，零运行时依赖，11 个工具。",
+      "description": "默认启动无头浏览器并使用一次性 profile：不抢焦点、不碰你的登录态。也可以用 browser_connect 接管你自己用 --remote-debugging-port=9222 启动的浏览器。工具：launch / connect / tabs / navigate / snapshot / eval / click / type / screenshot / close / quit。",
+      "homepage": "https://github.com/Azhe0306/dsh-connectors/tree/main/packages/browser-connector",
+      "latestVersion": "1.0.0",
+      "license": "MIT",
+      "categories": ["browser"],
+      "keywords": ["browser", "automation", "cdp", "浏览器", "自动化"],
+      "repository": {
+        "url": "https://github.com/Azhe0306/dsh-connectors",
+        "subdirectory": "packages/browser-connector"
+      },
+      "publisher": {
+        "name": "Azhe0306",
+        "url": "https://github.com/Azhe0306"
+      },
+      "capabilities": {
+        "required": ["browser.automation"],
+        "optional": ["page.screenshot", "page.interact", "network.fetch"]
+      },
+      "updatedAt": "2026-09-25T19:45:00Z"
+    },
+    {
+      "id": "Azhe0306/dsh-connectors:desktop-connector",
+      "name": "@azhe0306/dsh-desktop-connector",
+      "displayName": "操控电脑（Windows 桌面控制）",
+      "summary": "Windows 桌面控制连接器：截屏、窗口、鼠标、键盘，10 个工具，基于 koffi FFI。",
+      "description": "通过 10 个工具截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、移动/点击/拖拽/滚轮鼠标、发送组合键与任意中文文字。自带 GDI 截图与 PNG 编码，无需编译器、不每次起子进程；输入可显式指定目标窗口，置顶失败即拒绝执行。",
+      "homepage": "https://github.com/Azhe0306/dsh-connectors/tree/main/packages/desktop-connector",
+      "latestVersion": "1.0.0",
+      "license": "MIT",
+      "categories": ["tools"],
+      "keywords": ["desktop", "computer-control", "screenshot", "鼠标", "键盘"],
+      "repository": {
+        "url": "https://github.com/Azhe0306/dsh-connectors",
+        "subdirectory": "packages/desktop-connector"
+      },
+      "publisher": {
+        "name": "Azhe0306",
+        "url": "https://github.com/Azhe0306"
+      },
+      "capabilities": {
+        "required": ["screen.capture"],
+        "optional": ["input.mouse", "input.keyboard", "window.control"]
+      },
+      "updatedAt": "2026-09-25T19:45:00Z"
+    }
+  ],
+  "page": {}
+}
